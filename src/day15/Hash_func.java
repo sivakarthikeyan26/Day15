@@ -6,9 +6,15 @@ public class Hash_func {
 	Node head;
 	Node temp;
 	ArrayList<Node> list = new ArrayList<Node>();
+	@SuppressWarnings("rawtypes")
 	ArrayList arr = new ArrayList();
 	int c = 0;
-
+	/**
+	 * 
+	 * @param s
+	 * Function to add each word in the sentence or paragraph to the hashmap.
+	 */
+	@SuppressWarnings("unchecked")
 	public void find(String s) {
 		String[] words = s.split(" ");
 		for (String word : words) {
@@ -43,7 +49,9 @@ public class Hash_func {
 		}
 		display();
 	}
-
+	/**
+	 * Function to display the Hashmap.
+	 */
 	public void display() {
 		int count = 0;
 		for (Node node : list) {
@@ -63,6 +71,12 @@ public class Hash_func {
 			}
 		}
 	}
+	/**
+	 * 
+	 * @param s
+	 * @param count
+	 * Function to remove the duplicates in the sentence/paragraph.
+	 */
 	public void removeDuplicates(String s, int count) {
 		
 		while(count!=0) {
