@@ -3,7 +3,6 @@ package day15;
 public class Bst_main {
 
 	public static void main(String[] args) {
-		
 	        Bst_func tree=new Bst_func();
 	        tree.insert(56);
 	        tree.insert(30);
@@ -19,6 +18,8 @@ public class Bst_main {
 	        tree.insert(63);
 	        tree.insert(67);
 	        tree.inorder();
+	        tree.searchNode(tree.root,95);
+	        
 	}
 
 	}

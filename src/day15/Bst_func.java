@@ -4,6 +4,7 @@ import java.util.Stack;
 
 public class Bst_func {
 	Node_bst root;
+	public static boolean flag = false;  
 	  /**
 	   *  
 	   * @param key
@@ -49,4 +50,26 @@ public class Bst_func {
 	            }
 	        }
 	    }
+	  public void searchNode(Node_bst temp, int val){  
+	        //Check whether tree is empty  
+	        if(root == null){  
+	          System.out.println("Tree is empty");  
+	        }  
+	        else{  
+	          //If value is found in the given binary tree then, set the flag to true  
+	          if(temp.val == val){  
+	            flag = true;  
+	            System.out.println("found");
+	               return;  
+	          }  
+	          //Search in left subtree  
+	          if(flag == false && temp.left != null){  
+	             searchNode(temp.left, val);  
+	          }  
+	          //Search in right subtree  
+	          if(flag == false && temp.right != null){  
+	             searchNode(temp.right, val);  
+	          }  
+	        } 
+	  }
 }
