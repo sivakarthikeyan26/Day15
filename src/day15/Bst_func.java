@@ -4,7 +4,11 @@ import java.util.Stack;
 
 public class Bst_func {
 	Node_bst root;
-	   
+	  /**
+	   *  
+	   * @param key
+	   * Function to insert the key.
+	   */
 	  public void insert(int key){
 	        Node_bst node=new Node_bst(key);
 	        if(root==null) {
@@ -27,8 +31,10 @@ public class Bst_func {
 	            prev.left=node;
 	        else prev.right=node;
 	    }
-	   
-	   public void inorder(){
+	  /**
+	   * Function to print the tree in inorder
+	   */
+	  public void inorder(){
 	        Node_bst temp=root;
 	        Stack<Node_bst> stack=new Stack<>();
 	        while (temp!=null||!stack.isEmpty()){
