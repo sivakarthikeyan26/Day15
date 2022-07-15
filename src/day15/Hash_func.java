@@ -12,7 +12,7 @@ public class Hash_func {
 	/**
 	 * 
 	 * @param s
-	 * Function to add each word in the sentence or paragraph to the hashmap.
+	 * Function to add each word in the sentence or paragraph to the hashmap
 	 */
 	@SuppressWarnings("unchecked")
 	public void find(String s) {
