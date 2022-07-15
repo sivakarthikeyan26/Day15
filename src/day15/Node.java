@@ -6,7 +6,7 @@ public class Node {
 	/**
 	 * 
 	 * @param word
-	 * constructor to create a node.
+	 * constructor to create a node
 	 */
 	public Node(String word) {
 		this.data = word;
